@@ -10,16 +10,9 @@
     font-family: Courgette; 
 }
 
-#about {
+.about {
 	font-family: Merriweather;
 	font-size: 16px; 
-	color: #1a1a1a;
-    padding-bottom : 10px;
-}
-
-#orgo {
-	font-family: Merriweather;
-	font-size: 16px;
 	color: #1a1a1a;
     padding-bottom : 10px;
 }
@@ -29,6 +22,11 @@
 	font-size: 16px;
 	color: #1a1a1a;
     padding-bottom : 10px;
+}
+
+.indent {
+	padding-left: 2em;
+	display: block;
 }
 
 label {
@@ -43,20 +41,6 @@ input:invalid {
 input:valid {
     border-color: #ccc;
 }
-
-#DoorToMoreImage {
-    position: absolute;
-    top: 80px;
-    width: 200px;
-    height: 100px;
-    max-width: 250px;
-    max-height: 250px;
-    border: 3px solid #73AD21;
-    background: url("../resources/Door-To-More.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 
 /* Styling for the external links */ 
 .mail {
