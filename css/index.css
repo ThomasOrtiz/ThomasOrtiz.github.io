@@ -1,24 +1,31 @@
+form {
+	font-family: Ubuntu;
+	font-size: 16px; 
+	color: #1a1a1a;
+    padding-bottom : 10px;
+}
+
 .header {
     font-size: 22px; 
     color: #00005e; 
-    font-family: Courgette; 
+    font-family: Oswald; 
     font-weight: bold;
 }
 
 .subHeading {
-    font-size: 14px; 
-    font-family: Courgette; 
+    font-size: 16px; 
+    font-family: Oswald; 
 }
 
 .about {
-	font-family: Merriweather;
+	font-family: Ubuntu;
 	font-size: 16px; 
 	color: #1a1a1a;
     padding-bottom : 10px;
 }
 
 .projects {
-	font-family: Merriweather;
+	font-family: Ubuntu;
 	font-size: 16px;
 	color: #1a1a1a;
     padding-bottom : 10px;
