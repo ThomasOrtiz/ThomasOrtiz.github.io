@@ -2,8 +2,8 @@
 <html charset="utf-8">
 
 <body ng-controller="baseCtrl">
-    <form class="description">
-        <label>Decimal(10):</label> 
+    <form class="description" style="width: 25%; margin: 0 auto;">
+        <label>Decimal (10):</label> 
         <input 
             type="text" 
             id='dec' 
@@ -13,7 +13,7 @@
             data-ng-model="locals.dec" 
             ng-change="locals.decChange()"><br>
        
-        <label>Binary(2) :</label>
+        <label>Binary (2) :</label>
         <input 
             type="text"
             id='bin'
@@ -23,7 +23,7 @@
             data-ng-model="locals.bin" 
             ng-change="locals.binChange()"><br>
         
-        <label>Hex(16):</label>
+        <label>Hex (16):</label>
         <input 
             type="text" 
             id='hex' autocomplete="off" 
@@ -33,7 +33,7 @@
             data-ng-model="locals.hex" 
             ng-change="locals.hexChange()"><br>
         
-        <label>Octal(8) :</label>
+        <label>Octal (8) :</label>
         <input 
             type="text" 
             id='oct' 
