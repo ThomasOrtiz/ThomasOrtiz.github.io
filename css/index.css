@@ -56,7 +56,7 @@ input:valid {
 	position: absolute; top:0; left: 0; width: 100%; height: 100%;
 }
 
-/* Styling for the external links */ 
+/* Styling for the external image links */ 
 .mail {
 	display:block;
 	float: right;
