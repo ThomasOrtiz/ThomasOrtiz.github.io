@@ -1,0 +1,99 @@
+.header {
+    font-size: 22px; 
+    color: #00005e; 
+    font-family: Courgette; 
+    font-weight: bold;
+}
+
+.subHeading {
+    font-size: 14px; 
+    font-family: Courgette; 
+}
+
+#about {
+	font-family: Merriweather;
+	font-size: 16px; 
+	color: #1a1a1a;
+    padding-bottom : 10px;
+}
+
+#orgo {
+	font-family: Merriweather;
+	font-size: 16px;
+	color: #1a1a1a;
+    padding-bottom : 10px;
+}
+
+.projects {
+	font-family: Merriweather;
+	font-size: 16px;
+	color: #1a1a1a;
+    padding-bottom : 10px;
+}
+
+label {
+    display:inline-block;
+    width:100px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: #ccc;
+}
+
+#DoorToMoreImage {
+    position: absolute;
+    top: 80px;
+    width: 200px;
+    height: 100px;
+    max-width: 250px;
+    max-height: 250px;
+    border: 3px solid #73AD21;
+    background: url("../resources/Door-To-More.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* Styling for the external links */ 
+.mail {
+	display:block;
+	float: right;
+	margin-top: 7px;
+	height: 34px;
+	width: 50px;
+	background: url('../resources/mail.png') center top no-repeat;
+}
+
+.mail:hover {
+	display:block;
+	background: url('../resources/mail2.png') center top no-repeat;
+}
+
+.linkedin {
+	display:block;
+	height: 50px;
+	width: 50px;
+	background: url('../resources/linked.png') center top no-repeat;
+}
+
+.linkedin:hover {
+	display:block;
+	background: url('../resources/linked2.png') center top no-repeat;
+}
+
+.git {
+	display:block;
+	float: right;
+	height: 50px;
+	width: 50px;
+	background: url('../resources/git.png') center top no-repeat;
+}
+
+.git:hover {
+	display:block;
+	background: url('../resources/git2.png') center top no-repeat;
+}
