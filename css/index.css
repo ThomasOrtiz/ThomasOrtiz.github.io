@@ -1,13 +1,13 @@
-form {
-	font-family: Ubuntu;
-	font-size: 16px; 
-	color: #1a1a1a;
-    padding-bottom : 10px;
-}
-
 .header {
     font-size: 22px; 
-    color: #00005e; 
+    color: #1c84c6; 
+    font-family: Oswald; 
+    font-weight: bold;
+}
+
+.internship {
+	font-size: 18px; 
+    color: #1ab394; 
     font-family: Oswald; 
     font-weight: bold;
 }
@@ -15,18 +15,12 @@ form {
 .subHeading {
     font-size: 16px; 
     font-family: Oswald; 
+	color: #1c84c6;
 }
 
-.about {
+.description {
 	font-family: Ubuntu;
 	font-size: 16px; 
-	color: #1a1a1a;
-    padding-bottom : 10px;
-}
-
-.projects {
-	font-family: Ubuntu;
-	font-size: 16px;
 	color: #1a1a1a;
     padding-bottom : 10px;
 }
@@ -35,7 +29,7 @@ form {
 	padding-left: 2em;
 	display: block;
 }
-
+ 
 label {
     display:inline-block;
     width:100px;
