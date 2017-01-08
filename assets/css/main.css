@@ -1087,11 +1087,6 @@ input:valid {
 
 /* Mobile */
 @media screen and (max-width: 736px) {
-    * { 
-        overflow : auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
     #header {
         margin-top: 10em;
         height: 41em;
@@ -1217,11 +1212,6 @@ input:valid {
 
 /* Mobile (Portrait) */
 @media screen and (max-width: 480px) {
-    * { 
-        overflow : auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
     /* BG */
     @-moz-keyframes bg {
         0% {
