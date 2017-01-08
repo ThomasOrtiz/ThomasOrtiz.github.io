@@ -1087,6 +1087,10 @@ input:valid {
 
 /* Mobile */
 @media screen and (max-width: 736px) {
+    * { 
+        overflow : auto;
+    }
+    
     #header {
         margin-top: 10em;
         height: 41em;
