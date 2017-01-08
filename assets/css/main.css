@@ -1089,6 +1089,7 @@ input:valid {
 @media screen and (max-width: 736px) {
     * { 
         overflow : auto;
+        -webkit-overflow-scrolling: touch;
     }
     
     #header {
@@ -1218,6 +1219,7 @@ input:valid {
 @media screen and (max-width: 480px) {
     * { 
         overflow : auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     /* BG */
