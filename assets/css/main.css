@@ -1216,6 +1216,9 @@ input:valid {
 
 /* Mobile (Portrait) */
 @media screen and (max-width: 480px) {
+    * { 
+        overflow : auto;
+    }
 
     /* BG */
     @-moz-keyframes bg {
