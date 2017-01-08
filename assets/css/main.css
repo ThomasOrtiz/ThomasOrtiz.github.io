@@ -803,8 +803,8 @@ section {
 }
 
 .container {
-  padding-right: 15em;
-  padding-left: 15em;
+  padding-right: 10em;
+  padding-left: 10em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -830,7 +830,7 @@ section {
     float:left;
     margin-left: 1em;
     width: 100%;
-    padding-bottom:.5em;
+    padding: .5em;
 }
 
 .internship {
@@ -1002,15 +1002,32 @@ input:valid {
 
 /* Normal */
 @media screen and (max-width: 1280px) {
+    #header {
+        margin-top: 10em;
+        height: 41em;
+    }
+
+    .sectionHeader {
+        margin: auto;
+    }
+
+    .header {
+        margin: .25em;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .indent {
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+        display: block;
+    }
 
     /* Basic */
     body, input, select, textarea {
         font-size: 12pt;
-    }
-
-    .indent {
-        padding-left: 7em;
-        display: block;
     }
 
     /* BG */
@@ -1086,7 +1103,7 @@ input:valid {
 }
 
 /* Mobile */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 960px) {
     #header {
         margin-top: 10em;
         height: 41em;
@@ -1097,7 +1114,9 @@ input:valid {
     }
 
     .header {
-        margin: auto;
+        margin: 0em;
+        float: none;
+        padding-bottom: .25em;
     }
 
     .container {
@@ -1212,6 +1231,12 @@ input:valid {
 
 /* Mobile (Portrait) */
 @media screen and (max-width: 480px) {
+    .header {
+        padding-bottom: 0;
+        margin: 0;
+        margin-bottom: .5em;
+    }
+    
     /* BG */
     @-moz-keyframes bg {
         0% {
