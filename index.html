@@ -267,11 +267,15 @@
         });
 
         $(window).resize(function(){
-        var w = $(window).width();
-        if( w > 320 && menu.is(':hidden')){
-            menu.removeAttr('style');
-        }
+            var w = $(window).width();
+            if( w > 320 && menu.is(':hidden')){
+                menu.removeAttr('style');
+            }
         });
+
+        $('#menu li').on('click', function(){
+            $("#pull").click();
+        })
     });
 
     window.onorientationchange = function() { document.body.scrollTop = 0; }
