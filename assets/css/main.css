@@ -908,7 +908,7 @@ input:valid {
 }
 
 .responsiveCal{
-	position: relative; padding-bottom: 75%; height: 0; margin: auto; display:block;
+	position: relative; padding-bottom: 75%; padding-left:10%; height: 0; margin: auto; display:block;
 }
  
 .responsiveCal iframe {
