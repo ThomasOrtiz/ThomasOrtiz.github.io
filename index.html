@@ -20,16 +20,17 @@
         
         <div id="main">
 
-            <!-- Navbar -->
-            <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> -->
-            <nav class="nav navbar navbar-default navbar-fixed-top" role="navigation">
-                <ul> 
-                    <li><a id="homeBtn" href="#">Home</a></li>
-                    <li><a id="aboutBtn" href="#">About Me</a></li>
-                    <li><a id="projectsBtn" href="#">Projects</a></li>
-                    <li><a id="calendarBtn" href="#">Calendar</a></li>
+            <!-- Navigation Menu -->
+            <nav id="menu" class="clearfix">
+                <ul class="clearfix">
+                    <li><a id="homeBtn">Home</a></li>
+                    <li><a id="aboutBtn">About Me</a></li>
+                    <li><a id="projectsBtn">Projects</a></li>
+                    <li><a id="calendarBtn">Calendar</a></li>
                 </ul>
+                <a href="#" id="pull" class="icon fa-bars">&nbsp;&nbsp;Menu</a>
             </nav>
+
 
             <!-- Headshot and icon links -->
             <div id="header">
@@ -251,9 +252,24 @@
 <script>
     $(function() {
         document.body.className = '';
+        var pull = $('#pull');
+        menu = $('#menu ul');
+        menuHeight = menu.height();
+
+        $(pull).on('click', function(e){
+            e.preventDefault();
+            menu.slideToggle();
+        });
     });
-    //window.ontouchmove = function() { return false; }
+
     window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+    $(window).resize(function(){
+        var w = $(window).width();
+        if( w > 320 && menu.is(':hidden')){
+            menu.removeAttr('style');
+        }
+    })
 
     $("#homeBtn").click(function() {
         $('html, body').animate({
