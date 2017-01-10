@@ -915,6 +915,10 @@ input:valid {
 	position: absolute; width: 80%; height: 80%; margin: auto; display:block;
 }
 
+#agendaCalendar {
+        display: none;
+}
+
 /* Wide (Computer) */
 @media screen and (max-width: 1680px) {
 
@@ -1243,6 +1247,14 @@ input:valid {
     #header nav a:active {
         font-size: 1em;
     } 
+
+    #monthCalendar {
+        display: none;
+    }
+
+    #agendaCalendar {
+        display: block;
+    }
 }
 
 /* Mobile (Portrait) */
