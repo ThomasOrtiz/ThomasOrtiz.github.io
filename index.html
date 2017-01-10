@@ -20,7 +20,7 @@
         
         <div id="main">
 
-            <!-- Navigation Menu -->
+            <!-- Navbar -->
             <nav id="menu" class="clearfix">
                 <ul class="clearfix">
                     <li><a id="homeBtn">Home</a></li>
@@ -28,7 +28,10 @@
                     <li><a id="projectsBtn">Projects</a></li>
                     <li><a id="calendarBtn">Calendar</a></li>
                 </ul>
-                <a href="#" id="pull" class="icon fa-bars">&nbsp;&nbsp;Menu</a>
+                <a href="#" id="pull">
+                    <div style="float:left; margin-top: .30em;">Menu</div>
+                    <div style="float:right; margin-right: 1em; margin-top: .30em;"><i class="icon fa-bars" style="float:right;"></i></div>
+                </a>
             </nav>
 
 
@@ -260,6 +263,11 @@
             e.preventDefault();
             menu.slideToggle();
         });
+
+        $(pull).focusout, function(e){
+            e.preventDefault();
+            menu.slideToggle();
+        }
     });
 
     window.onorientationchange = function() { document.body.scrollTop = 0; }

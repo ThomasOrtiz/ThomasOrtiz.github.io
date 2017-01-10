@@ -729,14 +729,15 @@ a:hover {
 
 /** Navigation Menu Up Top */
 #menu {
-    height: 40px;
     top: 0em;
+    height: 40px;
     width: 100%;
     background: #444;
     font-size: 16pt;
     font-family: FontAwesome;
     position: fixed; 
     z-index: 999;
+    cursor:default;
 }
     #menu ul {
         padding: 0;
@@ -749,23 +750,22 @@ a:hover {
     #menu li {
         font-family: 'Oswald', sans-serif;
         font-size: 1.2em;
-        line-height: 40px;
-        height: 40px;
         border: none;
         display: inline;
         float: left;
+        height: 100%;
     }
 
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
+    .clearfix:before, .clearfix:after {
+        content: " ";
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    .clearfix {
+        *zoom: 1;
+    }
 
     #menu a {
         text-decoration: none;
@@ -773,6 +773,7 @@ a:hover {
         display: inline-block;
         transition: .3s background-color;
         width: 200px;
+        height: 100%;
         border:none;
         text-align: center;
         text-shadow: 1px 1px 0px #283744;
@@ -914,66 +915,7 @@ input:valid {
 	position: absolute; width: 80%; height: 80%; margin: auto; display:block;
 }
 
-@media screen and (max-width: 600px) {
-    #menu { 
-      height: auto;
-    }
-    #menu ul {
-      width: 100%;
-      display: block;
-      height: auto;
-    }
-    #menu li {
-      width: 50%;
-      float: left;
-      position: relative;
-    }
-    #menu li a {
-        border-bottom: 1px solid #576979;
-        border-right: 1px solid #576979;
-    }
-    #menu a {
-      text-align: left;
-      width: 100%;
-      text-indent: 25px;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .nav {
-        margin-bottom: 7.5em;
-    }
-
-        .nav li {
-            width: 200px;
-            border-bottom: none;
-            height: 50px;
-            line-height: 50px;
-            font-size: 1.4em;
-        }
-
-        /* Option 1 - Display Inline */
-        .nav li {
-            display: inline-block;
-            margin-right: -4px;
-        }
-
-        /* Options 2 - Float
-        .nav li {
-            float: left;
-        }
-        .nav ul {
-            overflow: auto;
-            width: 600px;
-            margin: 0 auto;
-        }
-        .nav {
-            background-color: #444;
-        }
-        */
-}
-
-/* Wide */
+/* Wide (Computer) */
 @media screen and (max-width: 1680px) {
 
     /* Basic */
@@ -1052,7 +994,7 @@ input:valid {
     }
 }
 
-/* Normal */
+/* Normal (Computer) */
 @media screen and (max-width: 1280px) {
     #header {
         margin-top: 10em;
@@ -1083,7 +1025,6 @@ input:valid {
     }
 
     /* BG */
-
     @-moz-keyframes bg {
         0% {
             -moz-transform: translate3d(0,0,0);
@@ -1154,10 +1095,33 @@ input:valid {
     } 
 }
 
-/* Mobile */
+/* Tablet */
 @media screen and (max-width: 960px) {
+    #menu { 
+      height: auto;
+    }
+    #menu ul {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    #menu li {
+      width: 50%;
+      float: left;
+      position: relative;
+    }
+    #menu li a {
+        padding: .5em;
+        border-bottom: 2px solid #292a2b;
+        border-right: 2px solid #292a2b;
+    }
+    #menu a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+    }
+    
     #header {
-        margin-top: 10em;
         height: 41em;
     }
 
@@ -1220,7 +1184,7 @@ input:valid {
             -ms-transform: translate3d(-300px,0,0);
             transform: translate3d(-300px,0,0);
         }
-        }
+    }
 
     @-ms-keyframes bg {
         0% {
@@ -1283,15 +1247,11 @@ input:valid {
 
 /* Mobile (Portrait) */
 @media screen and (max-width: 480px) {
-    .header {
-        padding-bottom: 0;
-        margin: 0;
-        margin-bottom: .5em;
-    }
-
     #menu {
         border-bottom: 0;
+        height: 40px;
     }
+    
     #menu ul {
         display: none;
         height: auto;
@@ -1301,15 +1261,22 @@ input:valid {
         background-color: #444;
         width: 100%;
         position: relative;
+        height: 50px;
     }
     #menu a#pull:after {
         content:"";
         width: 30px;
-        height: 30px;
+        height: 50px;
         display: inline-block;
         position: absolute;
         right: 15px;
         top: 10px;
+    }
+
+    .header {
+        padding-bottom: 0;
+        margin: 0;
+        margin-bottom: .5em;
     }
     
     /* BG */
