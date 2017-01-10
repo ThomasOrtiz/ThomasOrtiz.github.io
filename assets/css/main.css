@@ -75,7 +75,7 @@ a {
     -webkit-transition: border-color 0.2s ease-in-out;
     -ms-transition: border-color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out;
-    border-bottom: dotted 1px;
+    /* border-bottom: dotted 1px; */
     color: inherit;
     outline: 0;
     text-decoration: none;
@@ -1127,15 +1127,19 @@ input:valid {
     
     #header {
         height: 41em;
-        padding-left: 0.5em;
+        padding-left: 0em;
+    }
+
+    .subHeading {
+        margin-left: 0em;
     }
 
     .sectionHeader {
         margin: auto;
     }
 
-    .subHeading {
-        margin-left: 
+    .internship {
+        padding-left: 0em;
     }
 
     .header {
