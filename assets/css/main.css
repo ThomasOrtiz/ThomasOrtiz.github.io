@@ -727,9 +727,10 @@ a:hover {
         display: none;
     }
 
+/** Navigation Menu Up Top */
 #menu {
-    top: 0em;
     height: 40px;
+    top: 0em;
     width: 100%;
     background: #444;
     font-size: 16pt;
@@ -740,12 +741,17 @@ a:hover {
     #menu ul {
         padding: 0;
         margin: 0 auto;
-        width: 400px;
+        width: 800px;
         height: 40px;
         background-color: #444;
     }
 
     #menu li {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2em;
+        line-height: 40px;
+        height: 40px;
+        border: none;
         display: inline;
         float: left;
     }
@@ -762,14 +768,14 @@ a:hover {
 }
 
     #menu a {
+        text-decoration: none;
         color: #fff;
         display: inline-block;
-        width: 100px;
+        transition: .3s background-color;
+        width: 200px;
+        border:none;
         text-align: center;
-        text-decoration: none;
-        line-height: 40px;
         text-shadow: 1px 1px 0px #283744;
-        border-bottom:none;
     }
 
     #menu li a {
@@ -782,7 +788,7 @@ a:hover {
     }
 
     #menu a:hover, nav a:active {
-        background-color: #8c99a4;
+        background-color: #005f5f;
     }
 
     #menu a#pull {
@@ -1292,7 +1298,7 @@ input:valid {
     }
     #menu a#pull {
         display: block;
-        background-color: #283744;
+        background-color: #444;
         width: 100%;
         position: relative;
     }
@@ -1376,7 +1382,7 @@ input:valid {
         width: 1237.5px;
     }
 
-    /* Header */#
+    /* Header */
     #header nav {
         padding: 0 1em;
     } 
