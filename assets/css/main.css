@@ -1102,35 +1102,40 @@ input:valid {
 /* Tablet */
 @media screen and (max-width: 960px) {
     #menu { 
-      height: auto;
+        height: auto;
     }
-    #menu ul {
-      width: 100%;
-      display: block;
-      height: auto;
-    }
-    #menu li {
-      width: 50%;
-      float: left;
-      position: relative;
-    }
-    #menu li a {
-        padding: .5em;
-        border-bottom: 2px solid #292a2b;
-        border-right: 2px solid #292a2b;
-    }
-    #menu a {
-      text-align: left;
-      width: 100%;
-      text-indent: 25px;
-    }
+        #menu ul {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        #menu li {
+            width: 50%;
+            float: left;
+            position: relative;
+        }
+        #menu li a {
+            padding: .5em;
+            border-bottom: 2px solid #292a2b;
+            border-right: 2px solid #292a2b;
+        }
+        #menu a {
+            text-align: left;
+            width: 100%;
+            text-indent: 25px;
+        }
     
     #header {
         height: 41em;
+        padding-left: 0.5em;
     }
 
     .sectionHeader {
         margin: auto;
+    }
+
+    .subHeading {
+        margin-left: 
     }
 
     .header {
@@ -1144,7 +1149,8 @@ input:valid {
     }
 
     .indent {
-        padding-left: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
         display: block;
     }
 
