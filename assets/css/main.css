@@ -1145,6 +1145,7 @@ input:valid {
     .header {
         margin: 0em;
         float: none;
+        padding-left: 0em;
         padding-bottom: .25em;
     }
 
