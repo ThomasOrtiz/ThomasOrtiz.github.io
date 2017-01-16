@@ -793,6 +793,7 @@ a:hover {
     #menuText {
         float:left; 
         margin-top: .5em;
+        font-weight: bold;
     }
 
     #menuIcon {
@@ -809,9 +810,9 @@ a:hover {
     background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
     bottom: 0;
     cursor: default;
-    height: 6em;
+    height: 2em;
     left: 0;
-    line-height: 8em;
+    /*line-height: 8em; */
     position: absolute;
     text-align: center;
     width: 100%;
@@ -855,7 +856,7 @@ section {
     padding-top:1.5em;
 }
 
-.header {
+.textHeader {
     font-size: 35px; 
     color: #1c84c6; 
     font-family: Oswald; 
@@ -1014,7 +1015,7 @@ input:valid {
         margin: auto;
     }
 
-    .header {
+    .textHeader {
         margin: .25em;
     }
 
@@ -1147,7 +1148,7 @@ input:valid {
         padding-left: 0em;
     }
 
-    .header {
+    .textHeader {
         margin: 0em;
         float: none;
         padding-left: 0em;
@@ -1301,7 +1302,7 @@ input:valid {
         top: 10px;
     }
 
-    .header {
+    .textHeader {
         padding-bottom: 0;
         margin: 0;
         margin-bottom: .5em;
