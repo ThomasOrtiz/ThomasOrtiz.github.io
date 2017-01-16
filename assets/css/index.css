@@ -148,9 +148,6 @@ a:hover {
     opacity: 1;
 }
 
-
-
-
 /* Wrapper */
 @-moz-keyframes wrapper {
     0% {
@@ -204,9 +201,6 @@ a:hover {
     top: 0;
     width: 100%;
 }
-
-
-
 
 #avatar {
     background-image: url("images/personal.jpg");
@@ -795,6 +789,17 @@ a:hover {
     #menu a#pull {
         display: none;
     }   
+
+    #menuText {
+        float:left; 
+        margin-top: .5em;
+    }
+
+    #menuIcon {
+        float:right; 
+        margin-right: 1.5em; 
+        margin-top: .5em;
+    }
 
 /* Footer */
 #footer {
