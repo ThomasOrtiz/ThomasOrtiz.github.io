@@ -25,13 +25,7 @@ $(function() {
 
     window.onorientationchange = function() { document.body.scrollTop = 0; };
 
-    /* Menu onClick Buttons */
-    function scrollTo(elementID) {
-        console.log(elementID);
-        $('html, body').animate({
-            scrollTop: $("#" + elementID).offset().top
-        }, 1000);
-    };
+    
 
     // Google Analytics Tracking
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,3 +37,10 @@ $(function() {
     ga('send', 'pageview');
     
 });
+
+/* Menu onClick Buttons */
+function scrollTo(elementID) {
+    $('html, body').animate({
+        scrollTop: $("#" + elementID).offset().top
+    }, 1000);
+};
