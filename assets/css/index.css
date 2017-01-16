@@ -826,6 +826,10 @@ section {
     margin-bottom: 10em;
 }
 
+section a:hover {
+    font-color: #23c6c8;
+}
+
 .contentSection {
     height: 100%;
     width: 80%;
