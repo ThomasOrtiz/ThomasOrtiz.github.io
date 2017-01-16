@@ -917,7 +917,7 @@ input:valid {
 }
  
 .responsiveCal iframe {
-	position: absolute; width: 80%; height: 80%; margin: auto; display:block;
+	position: absolute; width: 80%; height: 95%; margin: auto; display:block;
 }
 
 #agendaCalendar {
