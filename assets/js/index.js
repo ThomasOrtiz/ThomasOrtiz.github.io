@@ -21,35 +21,17 @@ $(function() {
         if( !(w > 480) && !(menu.is(':hidden')) ) {
             $("#pull").click();
         }
-        
-    })
-
-    window.onorientationchange = function() { document.body.scrollTop = 0; }
-
-    /** Menu Button Clicks */
-    $("#homeBtn").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#header").offset().top
-        }, 1000);
     });
 
-    $("#aboutBtn").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top
-        }, 1000);
-    });
+    window.onorientationchange = function() { document.body.scrollTop = 0; };
 
-    $("#projectsBtn").click(function() {
+    /* Menu onClick Buttons */
+    function scrollTo(elementID) {
+        console.log(elementID);
         $('html, body').animate({
-            scrollTop: $("#projects").offset().top
+            scrollTop: $("#" + elementID).offset().top
         }, 1000);
-    });
-
-    $("#calendarBtn").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#calendar").offset().top
-        }, 1000);
-    });
+    };
 
     // Google Analytics Tracking
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
