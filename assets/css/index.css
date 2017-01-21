@@ -75,14 +75,15 @@ a {
     -webkit-transition: border-color 0.2s ease-in-out;
     -ms-transition: border-color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out;
-    /* border-bottom: dotted 1px; */
     color: inherit;
     outline: 0;
-    text-decoration: none;
+    text-decoration: underline;
+    font-style: italic;
 }
 
 a:hover {
     border-color: transparent;
+    color: #23c6c8;
 }
 
 /* Icon */
@@ -562,7 +563,7 @@ a:hover {
     vertical-align: middle;
     width: 100%; /* use to be 90 */
     height: 57em; /* use to be 75 */
-    padding-top: 5em;
+    padding-top: 10em;
 }
 
     #header h1 {
@@ -724,7 +725,7 @@ a:hover {
 /** Navigation Menu Up Top */
 #menu {
     top: 0em;
-    height: 40px;
+    height: 50px;
     width: 100%;
     background: #444;
     font-size: 16pt;
@@ -737,7 +738,6 @@ a:hover {
         padding: 0;
         margin: 0 auto;
         width: 800px;
-        height: 40px;
         background-color: #444;
     }
 
@@ -747,7 +747,7 @@ a:hover {
         border: none;
         display: inline;
         float: left;
-        height: 100%;
+        line-height: 50px;
     }
 
     .clearfix:before, .clearfix:after {
@@ -771,12 +771,14 @@ a:hover {
         border:none;
         text-align: center;
         text-shadow: 1px 1px 0px #283744;
+        font-style: normal;
     }
 
     #menu li a {
         box-sizing:border-box;
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
+        text-align: center;
     }
     #menu li:last-child a {
         border-right: 0;
@@ -792,13 +794,14 @@ a:hover {
 
     #menuText {
         float:left; 
-        margin-top: .5em;
+        margin-top: .45em;
         font-weight: bold;
+        font-size: 1.2em;
     }
 
     #menuIcon {
         float:right; 
-        margin-right: 1.5em; 
+        margin-right: 1em; 
         margin-top: .5em;
     }
 
@@ -838,11 +841,12 @@ section a:hover {
 	background: white;
     margin: auto;
     margin-bottom: 5em;
+    border-radius: 2.5em;
 }
 
 .container {
-  padding-right: 10em;
-  padding-left: 10em;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -854,10 +858,9 @@ section a:hover {
     font-family: Oswald; 
     font-weight: bold;
     float:left;
-    margin-left: 1em;
     width: 100%;
-    padding-bottom:1.5em;
-    padding-top:1.5em;
+    padding-bottom:1em;
+    padding-top:1em;
 }
 
 .textHeader {
@@ -1131,7 +1134,6 @@ input:valid {
         #menu a {
             text-align: left;
             width: 100%;
-            text-indent: 25px;
         }
     
     #header {
@@ -1293,6 +1295,7 @@ input:valid {
         width: 100%;
         position: relative;
         height: 50px;
+        text-indent: 25px;
     }
     #menu a#pull:after {
         content:"";
@@ -1302,6 +1305,11 @@ input:valid {
         position: absolute;
         right: 15px;
         top: 10px;
+    }
+
+    #header {
+        margin-top: .25em;
+        padding-top: 5em;
     }
 
     .textHeader {

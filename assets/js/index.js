@@ -28,7 +28,9 @@ $(function() {
 
 // Menu onClick Buttons 
 function scrollTo(elementID) {
-    $('html, body').animate({
-        scrollTop: $("#" + elementID).offset().top
-    }, 1000);
+    if( elementID ){
+        $('html, body').animate({
+            scrollTop: $("#" + elementID).offset().top
+        }, 1000);
+    }
 };
