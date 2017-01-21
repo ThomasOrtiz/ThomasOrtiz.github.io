@@ -602,6 +602,7 @@ a:hover {
         position: relative;
         top: 0;
         width: 5.35em;
+        font-size: 1.35em; /* Makes icons bigger */
     }
 
     #header nav li:nth-child(1) {
@@ -1312,6 +1313,7 @@ input:valid {
 
     .contentSection {
         width: 95%;
+        margin-top: 2.5em;
     }
     
     /* BG */
