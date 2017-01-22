@@ -732,7 +732,7 @@ a:hover {
     font-family: FontAwesome;
     position: fixed; 
     z-index: 999;
-    cursor:default;
+    cursor: default;
 }
     #menu ul {
         padding: 0;
