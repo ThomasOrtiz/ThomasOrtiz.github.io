@@ -21,15 +21,14 @@
             <!-- Navbar -->
             <nav id="menu" class="clearfix">
                 <ul class="clearfix">
-                    <li><a onClick="scrollTo('header');">Home</a></li>
-                    <li><a onClick="scrollTo('about');">About Me</a></li>
-                    <li><a onClick="scrollTo('experience');">Experience</a></li>
-                    <li><a onClick="scrollTo('projects');">Projects</a></li>
-                    <!-- <li><a id="calendarBtn" onClick="scrollTo('calendar');">Calendar</a></li> -->
+                    <li><a id="homeBtn" href="#header" onClick="scrollTo(this, 'header');">Home</a></li>
+                    <li><a id="aboutBtn" href="#about" onClick="scrollTo(this, 'about');">About Me</a></li>
+                    <li><a id="experienceBtn" href="#experience" onClick="scrollTo(this, 'experience');">Experience</a></li>
+                    <li><a id="projectsBtn"  href="#projects" onClick="scrollTo(this, 'projects');">Projects</a></li>
                 </ul>
                 <a href="#" id="pull">
                     <div id="menuText">Menu</div>
-                    <div id="menuIcon"><i class="icon fa-bars" style="float:right;"></i></div>
+                    <div id="menuIcon"><i class="icon fa-bars"></i></div>
                 </a>
             </nav>
 
@@ -223,25 +222,6 @@
                 </div>
             </section>
 
-            <!-- Calendar Section -->
-            <!-- 
-            <section id="calendar" class="contentSection">
-                <div class="container">
-                    <span class="sectionHeader">My Schedule</span><br /><br /><br /><br /><br />
-                    
-                    <div id="monthCalendar" class="responsiveCal">
-                        <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=tdortiz%40ncsu.edu&amp;color=%2329527A&amp;ctz=America%2FNew_York" 
-                                width="800" height="600" frameborder="0" scrolling="no">
-                        </iframe>
-                    </div>
-
-                     <div id="agendaCalendar" class="responsiveCal">
-                        <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=tdortiz%40ncsu.edu&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-            -->
 
             <!-- Footer -->
             <footer id="footer">
