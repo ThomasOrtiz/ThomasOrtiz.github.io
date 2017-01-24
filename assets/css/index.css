@@ -790,10 +790,6 @@ a:hover {
         background-color: #005f5f;
     }
 
-     #menu a.active {
-         text-decoration: underline;
-     }
-
     #menu a#pull {
         display: none;
     }   

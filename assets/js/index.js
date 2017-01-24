@@ -27,13 +27,8 @@ $(function() {
 });
 
 // Menu onClick Buttons 
-function scrollTo(callingElement, scrollToID) {
+function scrollTo(scrollToID) {
     if (scrollToID) {
-
-        // Reset other menu buttons and set active clicked button
-        $('#menu > ul > li > a').removeClass('active');
-        $( callingElement ).addClass('active');
-        
         // Animate moving 
         $('html, body').animate({
             scrollTop: $("#" + scrollToID).offset().top
@@ -41,7 +36,7 @@ function scrollTo(callingElement, scrollToID) {
     }
 };
 
-/** 
+/** */
 $(window).scroll(function() {
     var position = $(this).scrollTop();
     var somethingSelected = false;
@@ -62,4 +57,3 @@ $(window).scroll(function() {
         $('#menu > ul > li > a[href$=header]').addClass('active');
     }
 });
-*/
