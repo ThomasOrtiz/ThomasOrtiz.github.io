@@ -31,7 +31,7 @@ function scrollTo(scrollToID) {
     if (scrollToID) {
         // Animate moving 
         $('html, body').animate({
-            scrollTop: $("#" + scrollToID).offset().top
+            scrollTop: $("#" + scrollToID).offset().top - 125
         }, 1000);
     }
 };
