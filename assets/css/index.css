@@ -1333,6 +1333,11 @@ input:valid {
         text-align: center;
     }
 
+    .internship {
+        display: block;
+        text-align: center;
+    }
+
     .subHeading {
         text-align: center;
         display: block;
