@@ -1428,4 +1428,8 @@ input:valid {
     #menu li a {
         border-bottom: 1px solid #576979;
     }
+
+    .textHeader {
+        text-size: 30px;
+    }
 }
