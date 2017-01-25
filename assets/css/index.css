@@ -881,7 +881,8 @@ section a:hover {
     margin-left: 1em;
     margin-bottom: .25em;
     width: 100%;
-    letter-spacing: 1px;
+    line-height: 35px;
+    letter-spacing: 2px;
 }
 
 .internship {
@@ -890,6 +891,7 @@ section a:hover {
     font-family: Oswald; 
     font-weight: bold;
     padding-left: 1em;
+    letter-spacing: 2px;
 }
 
 .subHeading {
@@ -897,6 +899,7 @@ section a:hover {
     font-family: Oswald; 
     margin-left: 3em;
 	color: #1c84c6;
+    letter-spacing: 1px;
 }
 
 .description {
@@ -1167,6 +1170,7 @@ input:valid {
 
     .sectionHeader {
         margin: auto;
+        margin-bottom: .5em;
     }
 
     .internship {
@@ -1347,6 +1351,7 @@ input:valid {
     .subHeading {
         text-align: center;
         display: block;
+        margin-bottom: 1em;
     }
 
     .contentSection {
