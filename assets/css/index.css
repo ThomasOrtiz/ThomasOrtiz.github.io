@@ -874,6 +874,7 @@ section a:hover {
     font-weight: bold;
     float:left;
     margin-left: 1em;
+    margin-bottom: .25em;
     width: 100%;
 }
 
@@ -896,12 +897,13 @@ section a:hover {
 	font-family: Ubuntu;
 	font-size: 16px; 
 	color: #1a1a1a;
-    padding-bottom : 5em;
+    padding-bottom : 2em;
     text-align: left;
 }
 
 .indent {
 	padding-left: 4em;
+    margin-bottom: 1em;
 	display: block;
 }
 
@@ -1149,10 +1151,12 @@ input:valid {
     #header {
         height: 41em;
         padding-left: 0em;
+        padding-top: 10em;
     }
 
     .subHeading {
         margin-left: 1em;
+        margin-right: 1em;
     }
 
     .sectionHeader {
@@ -1166,6 +1170,7 @@ input:valid {
     .textHeader {
         margin: 0em;
         margin-left: .25em;
+        margin-bottom: .25em;
     }
 
     .container {
@@ -1326,6 +1331,11 @@ input:valid {
         margin: 0;
         margin-bottom: .5em;
         text-align: center;
+    }
+
+    .subHeading {
+        text-align: center;
+        display: block;
     }
 
     .contentSection {
