@@ -846,6 +846,7 @@ section a:hover {
     margin: auto;
     margin-bottom: 5em;
     border-radius: 2.5em;
+    background-image: url("images/background-for-text.png");
 }
 
 .container {
