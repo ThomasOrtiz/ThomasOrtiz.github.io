@@ -1165,7 +1165,6 @@ input:valid {
 
     .textHeader {
         margin: 0em;
-        float: none;
         margin-left: .25em;
     }
 
@@ -1326,6 +1325,7 @@ input:valid {
         padding-bottom: 0;
         margin: 0;
         margin-bottom: .5em;
+        text-align: center;
     }
 
     .contentSection {
