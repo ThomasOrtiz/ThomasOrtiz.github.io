@@ -35,25 +35,3 @@ function scrollTo(scrollToID) {
         }, 1000);
     }
 };
-
-/** */
-$(window).scroll(function() {
-    var position = $(this).scrollTop();
-    var somethingSelected = false;
-
-    $('.contentSection').each(function() {
-        var target = $(this).offset().top;
-        var id = $(this).attr('id');
-        
-        if (position + 240 >= target) {
-            somethingSelected = true;
-            $('#menu > ul > li > a').removeClass('active');
-            $('#menu > ul > li > a[href$=' + id + ']').addClass('active');
-        }
-    });
-
-    if( somethingSelected == false ){
-        $('#menu > ul > li > a').removeClass('active');
-        $('#menu > ul > li > a[href$=header]').addClass('active');
-    }
-});
