@@ -1430,6 +1430,6 @@ input:valid {
     }
 
     .textHeader {
-        text-size: 30px;
+        font-size: 30px;
     }
 }
