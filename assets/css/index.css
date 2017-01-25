@@ -881,6 +881,7 @@ section a:hover {
     margin-left: 1em;
     margin-bottom: .25em;
     width: 100%;
+    letter-spacing: 1px;
 }
 
 .internship {
