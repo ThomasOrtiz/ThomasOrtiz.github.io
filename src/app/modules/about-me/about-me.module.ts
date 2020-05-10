@@ -9,7 +9,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [SharedModule, RouterModule.forChild(routes)],
+  imports: [
+    SharedModule,
+    RouterModule.forChild(routes)
+  ],
   exports: [RouterModule],
   declarations: [AboutMeComponent]
 })
