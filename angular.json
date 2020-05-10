@@ -123,6 +123,13 @@
               "devServerTarget": "my-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "tdortiz.github.io",
+            "branch": "master"
+          }
         }
       }
     }
