@@ -1,3 +1,35 @@
-<p>
-  experience works!
-</p>
+<div class="grid-container">
+
+  <h1 class="mat-h1">Experience</h1>
+
+  <mat-expansion-panel
+    *ngFor="let card of cards$ | async; let first = first; let i = index;"
+    [expanded]="activePanel === i"
+    (opened)="setStep(i)"
+    class="project-panel"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ card.title }}</mat-panel-title>
+      <mat-panel-description>{{ card.subtitle }}</mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div class="project-content-container">
+      <div class="project-content-section">
+        <h2>Overview</h2>
+        {{ card.overview }}
+      </div>
+
+      <div class="project-content-section" *ngFor="let content of card.contentSections">
+        {{ content }}
+      </div>
+
+      <div>
+        <h2>Skills</h2>
+        <mat-chip-list>
+          <mat-chip *ngFor="let skill of card.skills">{{ skill }}</mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+
+  </mat-expansion-panel>
+</div>
