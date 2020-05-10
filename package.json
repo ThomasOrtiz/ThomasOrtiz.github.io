@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ngh": "ngh",
-    "deploy": "ng deploy --base-href=/Tdortiz.github.io/"
+    "deploy": "ng deploy"
   },
   "private": true,
   "dependencies": {

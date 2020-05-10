@@ -127,7 +127,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "tdortiz.github.io",
+            "baseHref": "Tdortiz.github.io",
             "branch": "master"
           }
         }
