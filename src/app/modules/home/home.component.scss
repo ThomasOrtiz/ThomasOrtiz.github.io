@@ -12,6 +12,7 @@ a:hover {
   padding: 15px;
   grid-template-columns: 75% 25%;
   gap: 10px 15px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
 .container {
