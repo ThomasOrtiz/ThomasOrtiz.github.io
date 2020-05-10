@@ -76,6 +76,8 @@
       true,
       "as-needed"
     ],
+    "ordered-imports": true,
+    "prefer-const": true,
     "quotemark": [
       true,
       "single"
