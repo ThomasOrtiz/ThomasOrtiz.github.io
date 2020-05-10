@@ -1,6 +1,6 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-project-dashboard',
@@ -8,26 +8,121 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./project-dashboard.component.scss']
 })
 export class ProjectDashboardComponent {
-  /** Based on the screen size, switch from standard to one column per row */
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({ matches }) => {
-      if (matches) {
-        return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
-        ];
-      }
 
-      return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
-      ];
-    })
-  );
+  public cards$: Observable<any[]> = of(this.getCards());
+  public activePanel = 0;
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+
+  public setStep(index: number) {
+    this.activePanel = index;
+  }
+
+  private getCards(): any[] {
+    const cards: any[] = [];
+
+    cards.push({
+      title: 'Personal website',
+      overview: `
+        A personal website to give a brief overview of myself and to further learn web technologies.
+      `,
+      content: `
+         Deployed via Github Pages.
+      `,
+      skills: ['Angular 9', 'Typescript', 'HTML', 'SCSS', 'Github Pages']
+    });
+
+    cards.push({
+      title: 'Jenkins Dashboard',
+      subtitle: 'NCSU - CSC Research (2017)',
+      overview: `
+        Using Jenkins I helped automate build processes, grading, and feedback in NCSU Computer Science classes.
+      `,
+      content: `
+        Our solution extended data collection during builds and displayed conslidated project information with a Django Dashboard
+        for Teaching Assistants and Students.
+      `,
+      skills: ['Full-Stack Development', 'Django', 'Jenkins', 'SQL']
+    });
+
+    cards.push({
+      title: 'iTrust',
+      subtitle: 'NCSU - CSC 326 (2016)',
+      overview: `
+        Over the course of a semester our 5-person team worked on iTrust - an on-going program
+        that worked on by previous CSC students at NCSU over the past decade. At the end of the semester our project was selected as best in the class.
+      `,
+      content: `
+        Using JSF (JavaServer Faces) we implemented five additional use cases, refactored logging, secure SQL, implement proper unit test mocking through Mockito, and created a docker image.
+        The process involved 5 iterations where our team worked in an agile environment. The project was
+        managed through GitHub where we utilized pull requests for code review and merges, Github Issues for story creation,
+        and Github Projects as a scrub board.
+      `,
+      skills: ['Agile Development', 'Git', 'Full-Stack Development', 'Object Oriented Design', 'SQL']
+    });
+
+    cards.push({
+      title: 'Door to More',
+      subtitle: 'Blackbaud - Off The Grid Finalist (2016)',
+      overview: `
+        Door To More was created in 24 hours to benefit advocacy organizations that would employ individuals to
+        canvass door to door or on the street to raise awareness, solicit donations, and add to in-house files.
+      `,
+      content: `
+        The app's purpose is to create a streamlined interface where canvassers could quickly create new constituents and document
+        the interaction so that advocacy organizations can aggregate or target these constituents in the future.
+      `
+    });
+
+    cards.push({
+      title: 'Castle Platformer',
+      subtitle: 'Game Development',
+      overview: `
+        A metrovanian style platformer made in Gamemaker where a player explores a castle
+        in order to save the princess.
+      `,
+      content: `
+        My role in this game was to create the hero's backend and enemy's ai. I worked on ai for all of the
+        enemies - bats, melee eneimies, ranged eneimies, and the boss.
+      `,
+      skills: ['GameMaker', 'Scripting', 'Simple AI']
+    });
+
+    cards.push({
+      title: 'The Arena',
+      subtitle: 'Game Development',
+      overview: `
+        This is a Roman arena style game made in Gamemaker where a player plays as the beast who
+        is attacked by waves of gladiators.
+      `,
+      content: `
+      As the beast, the player must fight off wave after wave of gladiators until your eventual death
+      by being overwhelemed.
+
+      Balance your abilities and see how far you can get.
+
+      My role in this game was to create the player's backend and gladiator's ai.
+      `,
+      skills: ['GameMaker', 'Scripting', 'Simple AI']
+    });
+
+    cards.push({
+      title: 'File Anonymizer',
+      subtitle: 'NCSU - CSC Research (2016)',
+      overview: `
+        Anonymizes student files by removing identifying information such as email or @author tags and replaces
+        the identifiers with encrypted ids generated by the research director.
+      `,
+      content: `
+        The anonymizer was created so that NCSU's CSC department could safely begin data collection
+        on student assignments without exposing sensitive data.
+      `,
+      skills: ['Java', 'File processing']
+    });
+
+
+
+    return cards;
+  }
+
 }

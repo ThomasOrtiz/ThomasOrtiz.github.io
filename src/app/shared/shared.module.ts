@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -14,6 +16,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   exports: [
     CommonModule,
     MatToolbarModule,
+    MatChipsModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
@@ -21,7 +24,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     LayoutModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatExpansionModule
   ],
   declarations: []
 })
