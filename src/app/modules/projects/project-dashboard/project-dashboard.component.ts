@@ -1,4 +1,3 @@
-import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
@@ -11,8 +10,6 @@ export class ProjectDashboardComponent {
 
   public cards$: Observable<any[]> = of(this.getCards());
   public activePanel = 0;
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
 
   public setStep(index: number) {
     this.activePanel = index;
@@ -119,8 +116,6 @@ export class ProjectDashboardComponent {
       `,
       skills: ['Java', 'File processing']
     });
-
-
 
     return cards;
   }
